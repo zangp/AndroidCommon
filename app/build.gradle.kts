@@ -18,12 +18,12 @@ val sKeyPassword = prop.getProperty("keyPassword") ?: ""
 
 android {
     namespace = "com.perry.androidcommon"
-    compileSdk = 34
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.perry.androidcommon"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = libs.versions.miniSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
