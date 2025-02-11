@@ -70,9 +70,14 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
+    implementation(project(":baselib"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
