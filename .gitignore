@@ -15,3 +15,5 @@
 .cxx
 local.properties
 avatrdebug.jks
+/.idea/gradle.xml
+/.idea/misc.xml

@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.1"
+agp = "8.8.0"
 kotlin = "1.9.24"
 coreKtx = "1.10.1"
 junit = "4.13.2"
@@ -11,8 +11,8 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 
 miniSdk = "24"
-compileSdk = "34"
-targetSdk = "34"
+compileSdk = "35"
+targetSdk = "35"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
