@@ -102,7 +102,7 @@ object ScreenUtils {
     @SuppressLint("DiscouragedApi", "InternalInsetResource")
     @JvmStatic
     fun getStatusBarHeight(context: Context?): Int {
-        if (context == null) return 0
+        if (context == null || context.resources == null) return 0
         val resourceId = context.resources.getIdentifier("status_bar_height", "dimen", "android")
         return if (resourceId > 0) context.resources.getDimensionPixelSize(resourceId) else 0
     }
@@ -111,7 +111,7 @@ object ScreenUtils {
     @SuppressLint("DiscouragedApi", "InternalInsetResource")
     @JvmStatic
     fun getNavigationBarHeight(context: Context?): Int {
-        if (context == null) return 0
+        if (context == null || context.resources == null) return 0
         val resourceId =
             context.resources.getIdentifier("navigation_bar_height", "dimen", "android")
         return if (resourceId > 0) context.resources.getDimensionPixelSize(resourceId) else 0
