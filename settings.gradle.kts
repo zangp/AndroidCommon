@@ -36,3 +36,4 @@ rootProject.name = "AndroidCommon"
 include(":app")
 include(":baselib")
 include(":network")
+include(":utilslib")

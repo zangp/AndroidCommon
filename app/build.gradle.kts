@@ -79,6 +79,7 @@ android {
 dependencies {
     implementation(project(":baselib"))
     implementation(project(":network"))
+    implementation(project(":utilslib"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
